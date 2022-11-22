@@ -155,7 +155,7 @@ impl Machine {
             OpCode::Pop(a) => {
                 let top = self.stack.pop();
                 match top {
-                    Some(top_value) => self.set_register(a, top),
+                    Some(top_value) => self.set_register(a, top_value),
                     None => return false,
                 }
             }
