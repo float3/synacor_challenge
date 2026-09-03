@@ -197,7 +197,12 @@ impl Machine {
             },
             OpCode::Out(a) => print!("{}", (self.value(a) as u8) as char),
             OpCode::In(a) => {
-                let c: u8 = std::io::stdin().bytes().nth(0).expect("EOF").expect("EOF");
+                let c: u8 = std::io::stdin()
+                    .lock()
+                    .bytes()
+                    .nth(0)
+                    .expect("EOF")
+                    .expect("EOF");
                 self.set_register(a, c as u16);
             }
             OpCode::Noop => (),
