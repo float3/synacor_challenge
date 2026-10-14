@@ -1,8 +1,8 @@
 == Synacor Challenge ==
 In this challenge, your job is to use this architecture spec to create a
-virtual machine capable of running the included binary.  Along the way,
+virtual machine capable of running the included binary.  along the way,
 you will find codes; submit these to the challenge website to track
-your progress.  Good luck!
+your progress.  good luck!
 
 
 == architecture ==
@@ -22,15 +22,15 @@ your progress.  Good luck!
 - address 0 is the first 16-bit value, address 1 is the second 16-bit value, etc
 
 == execution ==
-- After an operation is executed, the next instruction to read is immediately after the last argument of the current operation.  If a jump was performed, the next operation is instead the exact destination of the jump.
-- Encountering a register as an operation argument should be taken as reading from the register or setting into the register as appropriate.
+- after an operation is executed, the next instruction to read is immediately after the last argument of the current operation.  if a jump was performed, the next operation is instead the exact destination of the jump.
+- encountering a register as an operation argument should be taken as reading from the register or setting into the register as appropriate.
 
 == hints ==
-- Start with operations 0, 19, and 21.
-- Here's a code for the challenge website: MzqlcDWVcPSR
-- The program "9,32768,32769,4,19,32768" occupies six memory addresses and should:
-  - Store into register 0 the sum of 4 and the value contained in register 1.
-  - Output to the terminal the character with the ascii code contained in register 0.
+- start with operations 0, 19, and 21.
+- here's a code for the challenge website: MzqlcDWVcPSR
+- the program "9,32768,32769,4,19,32768" occupies six memory addresses and should:
+  - store into register 0 the sum of 4 and the value contained in register 1.
+  - output to the terminal the character with the ascii code contained in register 0.
 
 == opcode listing ==
 halt: 0

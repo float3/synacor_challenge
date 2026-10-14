@@ -1,8 +1,8 @@
 # synacor_challenge
 
-Virtual machine for the [Synacor Challenge](https://challenge.synacor.com) in Rust. The architecture is described in [arch-spec.md](arch-spec.md).
+virtual machine for the [Synacor Challenge](https://challenge.synacor.com) in Rust. the architecture is described in [arch-spec.md](arch-spec.md).
 
-## Run
+## run
 
 ```sh
 cargo run --release -- challenge.bin
